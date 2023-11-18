@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   <meta charset="UTF-8">
+   <title>Image generator</title>
+
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: cadetblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 100vh;
+    }
+    h2{
+        color: white;
+        font-size: 40px;
+    }
+    .prompt{
+        background-color: rgb(38, 92, 94);
+        padding: 5px;
+        width: 620px;
+        border: 3px solid rgb(38, 92, 94);
+        border-radius: 10px;
+    }
+    input,button{
+        padding: 10px;
+        border: none;
+        font-size: 20px;
+    }
+    input{
+        background-color: rgb(38, 92, 94);
+        width: 75%;
+        outline: none;
+        color: white;
+    }
+    button{
+        background-color: rgb(52, 110, 112);
+        width: 20%;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(84, 136, 138);
+    }
+    .images{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+    .images div{
+        height: 200px;
+        width: 200px;
+        background-color: rgb(52, 110, 112);
+        border-radius:10px;
+        border: 3px solid  rgb(84, 136, 138);
+    }
+    .images div img{
+        width: 100%;
+    }
+  </style>
+    <body>
+        <h2>AI images generator</h2>
+        <div class="images">
+          
+        </div>
+        <div class="prompt">
+            <input type="text" name="" id="inpt">
+            <button onclick="getImage()">Generate</button>
+        </div>
+
+        <script src="script.js">
+        </script>
+    </body>
+</html>
